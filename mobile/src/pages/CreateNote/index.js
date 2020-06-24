@@ -1,5 +1,6 @@
 import React from 'react';
-import {Container, Logo, Note, Title, TitleInput, Description, DescriptionInput, CreteNoteButton, ButtonText, Icon, Type, NoteTypes, TypeButton, TypeSelected} from './styles'
+import {Container, Logo, Note, Title, TitleInput, Description, DescriptionInput,
+    CreteNoteButton, ButtonText, Icon, Type, NoteTypes, TypeButton, TypeSelected, TypeText, Header, HeaderTitle} from './styles'
 import { MaterialIcons, MaterialCommunityIcons, AntDesign} from '@expo/vector-icons';
 
 
@@ -9,9 +10,16 @@ export default function CreateNote() {
 
   return (
    <Container behavior='padding'>
-   
-          <Logo source={logo} alt="ReactShows"/>  
 
+        <Header>
+          <Logo source={logo} alt="ReactShows"/>  
+    
+          <HeaderTitle>            
+            Crie a sua Nota!            
+          </HeaderTitle>
+          
+        </Header>
+          
           <Note>            
             <Title>Título</Title>
               <TitleInput placeholder="Digite o título da nota..."  autoCapitalize="none"/>
@@ -19,6 +27,7 @@ export default function CreateNote() {
             <Description>Descrição</Description>
               <DescriptionInput placeholder="Digite a descrição..."  autoCapitalize="none" multiline = {true}/>
 
+            <TypeText>Tipo da Nota</TypeText>
               <NoteTypes  horizontal={true} showsHorizontalScrollIndicator={false}>
                 <TypeButton >
                     <TypeSelected>                

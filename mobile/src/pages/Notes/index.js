@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Container, Logo, Info, Note, InfoTab, Amount, Title, Description, StarButton, NoteList, NoteHeader, TrashButton, CheckButton} from './styles'
+import {Container, Logo, Info, Note, InfoTab, Amount, Title, Description, StarButton, NoteList, NoteHeader, TrashButton, CheckButton, TypeDescription} from './styles'
 import { FontAwesome, FontAwesome5, AntDesign, Feather } from '@expo/vector-icons'; 
 
 import logo from '../../assets/logo2.png'
@@ -45,9 +45,12 @@ export default function Notes() {
               </NoteHeader>
 
             <Description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, est officia mollitia ab odio eaque voluptates excepturi et </Description>
+            <TypeDescription>#Pagamentos</TypeDescription>
             <TrashButton>
               <FontAwesome5 name="trash-alt" size={20} color="#544097" />
             </TrashButton>
+
+            
           </Note>
 
           <Note>
@@ -62,6 +65,7 @@ export default function Notes() {
               </NoteHeader>
 
             <Description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, est officia mollitia ab odio eaque voluptates excepturi et </Description>
+            <TypeDescription>#Lazer</TypeDescription>
             <TrashButton>
               <FontAwesome5 name="trash-alt"size={20} color="#544097" />
             </TrashButton>
@@ -79,6 +83,7 @@ export default function Notes() {
               </NoteHeader>
 
             <Description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, est officia mollitia ab odio eaque voluptates excepturi et </Description>
+            <TypeDescription>#Trabalho </TypeDescription>
             <TrashButton>
               <FontAwesome5 name="trash-alt" size={20} color="#544097" />
             </TrashButton>
@@ -96,6 +101,7 @@ export default function Notes() {
               </NoteHeader>
 
             <Description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, est officia mollitia ab odio eaque voluptates excepturi et </Description>
+            <TypeDescription>#Mercado</TypeDescription>
             <TrashButton>
               <FontAwesome5 name="trash-alt" size={20} color="#544097" />
             </TrashButton>
@@ -113,6 +119,7 @@ export default function Notes() {
               </NoteHeader>
 
             <Description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, est officia mollitia ab odio eaque voluptates excepturi et </Description>
+            <TypeDescription>#Leitura</TypeDescription>
             <TrashButton>
               <FontAwesome5 name="trash-alt" size={20} color="#544097" />
             </TrashButton>

@@ -6,12 +6,24 @@ export const Container = styled.View`
     alignItems: center;
   `
 
+export const Header = styled.View`
+    display: flex;
+    flexDirection: row;
+  `
+
+export const HeaderTitle = styled.Text`
+    marginTop:60px;
+    fontFamily: Roboto;
+    fontSize: 24px;
+    fontWeight: bold;
+    color:#7159C1;
+`
 
 export const Logo = styled.Image`
     marginTop:50px;
     padding: 20px;
-    marginBottom: 30px;
-
+    marginBottom: 20px;
+    marginRight: 100px;
 `
 
 export const Note = styled.View`
@@ -52,6 +64,14 @@ export const Description = styled.Text`
     color:#7159C1;
      
 `
+export const TypeText = styled.Text`
+    fontFamily: Roboto;
+    fontSize: 18px;
+    fontWeight: bold;
+    color:#7159C1;
+    marginBottom: 5px;
+     
+`
 
 export const DescriptionInput = styled.TextInput.attrs({
     placeholderTextColor: '#AEA0DD',
@@ -87,7 +107,7 @@ export const Type = styled.View`
 
 export const TypeSelected = styled.View`
     marginRight: 22px;
-    backgroundColor: #AEA0DD;
+    backgroundColor: #D9D9D9;
     height: 95px;
     width: 95px;
     alignItems: center;
@@ -103,7 +123,7 @@ export const CreteNoteButton = styled.TouchableOpacity`
     height: 50px;
     alignItems: center;   
     borderRadius: 8px;
-    marginTop: 40px;
+    marginTop: 15px;
 `
 
 export const Icon = styled.View`

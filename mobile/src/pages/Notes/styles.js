@@ -64,7 +64,15 @@ export const Description = styled.Text`
     fontFamily: Roboto;
     fontSize: 14px;
     padding:5px;
-   
+    
+`
+
+export const TypeDescription = styled.Text`
+    fontFamily: Roboto;
+    fontSize: 14px;
+    padding:5px;
+    fontWeight: bold;
+    color: #7159C1;
     
 `
 export const CheckButton = styled.TouchableOpacity`
