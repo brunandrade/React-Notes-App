@@ -6,7 +6,7 @@ import Login from './pages/Login/index'
 import Notes from './pages/Notes/index'
 import CreateNote from './pages/CreateNote/index'
 import Profile from './pages/Profile/index'
-import { Feather } from '@expo/vector-icons';
+import Register from './pages/Register/index'
 import { FontAwesome5 } from '@expo/vector-icons';
 
 const Stack = createStackNavigator();
@@ -60,6 +60,7 @@ export default function Route(){
        <NavigationContainer>
             <Stack.Navigator screenOptions={{headerShown: false}}>
                 <Stack.Screen name="Login" component={Login} />
+                <Stack.Screen name="Register" component={Register} />
                 <Stack.Screen name="NotesTabs" component={NoteTabs} />
             </Stack.Navigator>
        </NavigationContainer>

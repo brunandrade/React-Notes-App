@@ -8,7 +8,11 @@ export default function App() {
 
   function navigateLogin(){
     navigation.navigate('NotesTabs');
-}
+  }
+
+    function navigateRegister(){
+      navigation.navigate('Register');
+  }
   return (
    <Container>
       <Form behavior='padding' >
@@ -21,7 +25,7 @@ export default function App() {
             <SubmitButtonText>Entrar</SubmitButtonText>
         </SubmitButton>
 
-        <RegisterButton>
+        <RegisterButton onPress={() => navigateRegister()}>
             <RegisterButtonText>Cadastre-se Aqui!</RegisterButtonText>
         </RegisterButton>
 

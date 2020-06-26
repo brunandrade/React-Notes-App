@@ -42,17 +42,22 @@ export default function Profile() {
           <Line/>
 
           <InfoButton>
-            <FontAwesome name="lock" size={20} color="black" />
+            <AntDesign name="lock1" size={20} color="black" />
             <InfoTex>Esqueci minha senha</InfoTex>
           </InfoButton>
         
           <InfoButton>
-            <AntDesign name="deleteuser" size={22} color="black" />
+            <AntDesign name="deleteuser" size={20} color="black" />
             <InfoTex>Deletar minha conta</InfoTex>
           </InfoButton>
 
           <InfoButton>
-            <Feather name="log-out" size={22} color="black" />
+            <AntDesign name="setting" size={20} color="black" />
+            <InfoTex>Configurações</InfoTex>
+          </InfoButton>
+
+          <InfoButton>
+            <Feather name="log-out" size={20} color="black" />
             <InfoTex>Sair</InfoTex>
           </InfoButton>
           

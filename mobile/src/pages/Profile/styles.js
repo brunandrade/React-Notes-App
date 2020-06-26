@@ -71,15 +71,17 @@ export const Line = styled.View`
 `
 
 export const InfoButton = styled.TouchableOpacity`
-    display: flex;
+    display:flex;
     flexDirection: row;
-    alignItems:center;
-    marginTop: 10px;    
+    alignItems:center;  
+    marginTop: 20px;    
 `
 
 export const InfoTex = styled.Text`
     fontFamily: Roboto;
     fontSize: 16px; 
+    padding: 0 20px;
+    
 `
 
 
